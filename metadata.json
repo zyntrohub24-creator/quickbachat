@@ -1,0 +1,7 @@
+{
+  "name": "QuickBachat",
+  "description": "QuickBachat is a smart shopping platform being built to help consumers discover products, compare shopping options, optimize baskets and make better buying decisions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

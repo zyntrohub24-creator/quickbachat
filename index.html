@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickBachat — Compare, Save & Shop Smarter</title>
+    <meta
+      name="description"
+      content="QuickBachat is a smart shopping platform being built to help consumers discover products, compare shopping options, optimize baskets and make better buying decisions."
+    />
+    <link rel="canonical" href="https://quickbachat.in/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://quickbachat.in/" />
+    <meta property="og:title" content="QuickBachat — Compare, Save & Shop Smarter" />
+    <meta
+      property="og:description"
+      content="QuickBachat is a smart shopping platform being built to help consumers discover products, compare shopping options, optimize baskets and make better buying decisions."
+    />
+    <meta property="og:site_name" content="QuickBachat" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://quickbachat.in/" />
+    <meta name="twitter:title" content="QuickBachat — Compare, Save & Shop Smarter" />
+    <meta
+      name="twitter:description"
+      content="QuickBachat is a smart shopping platform being built to help consumers discover products, compare shopping options, optimize baskets and make better buying decisions."
+    />
+
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "QuickBachat",
+      "url": "https://quickbachat.in/",
+      "applicationCategory": "ShoppingApplication",
+      "operatingSystem": "All",
+      "description": "QuickBachat is a smart shopping platform being built to help consumers discover products, compare shopping options, optimize baskets and make better buying decisions.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Hyderabad",
+        "addressCountry": "IN"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    }
+    </script>
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('qb_theme');
+          var isDark = saved === 'dark' || (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#fafbfc] dark:bg-[#070b11] text-slate-900 dark:text-slate-100 antialiased selection:bg-emerald-100 dark:selection:bg-emerald-950/80 selection:text-emerald-900 dark:selection:text-emerald-200 font-sans min-h-screen transition-colors">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
